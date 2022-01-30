@@ -14,7 +14,7 @@ export const Events = () => {
     <div>
       {events?.map((event) => (
         <div key={event.id}>
-          <p>Date de l'event : {event.eventDate}</p>
+          <p>Date de l event : {event.eventDate}</p>
           <p>Note de la journée : {event.rating}</p>
         </div>
       ))}

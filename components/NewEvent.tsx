@@ -20,7 +20,7 @@ export const NewEvent = () => {
   };
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="eventDate">Date de l'entrée</label>
+      <label htmlFor="eventDate">Date de l entrée</label>
       <br />
       <input type="date" name="eventDate" id="eventDate" />
       <br />
