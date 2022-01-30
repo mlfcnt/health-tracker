@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       {currentUser ? (
         <>
           <Events />
-          <span style={{ margin: "50px" }}>__________________</span>
+          <p style={{ margin: "50px" }}>__________________</p>
           <NewEvent />
         </>
       ) : (

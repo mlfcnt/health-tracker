@@ -10,7 +10,7 @@ export const NewEvent = () => {
     const { eventDate, screenTime, rating, workTime } = e.target;
 
     const newEvent: createEventDto = {
-      eventDate: eventDate.value,
+      eventDate: eventDate?.value || new Date(),
       rating: rating.value,
       screen_time: screenTime.value,
       work_time: workTime.value,
@@ -25,12 +25,12 @@ export const NewEvent = () => {
       <input type="date" name="eventDate" id="eventDate" />
       <br />
       <label htmlFor="screenTime">
-        Temps passé devant un écran (en minutes)
+        Temps passé devant un écran (en heures)
       </label>
       <br />
       <input type="number" name="screenTime" id="screenTime" min={0} />
       <br />
-      <label htmlFor="workTime">Temps passé au travail (en minutes)</label>
+      <label htmlFor="workTime">Temps passé au travail (en heures)</label>
       <br />
       <input type="number" name="workTime" id="workTime" min={0} />
       <br />

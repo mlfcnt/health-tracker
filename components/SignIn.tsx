@@ -12,7 +12,7 @@ export const SignIn = () => {
 
   return (
     <form onSubmit={onSubmit} key="signInEvent">
-      <input type="email" name="email" id="email" ref={refEmail} />
+      {/* <input type="email" name="email" id="email" ref={refEmail} /> */}
       <button type="submit">Se connecter</button>
     </form>
   );
