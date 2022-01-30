@@ -5,8 +5,6 @@ export const NewEvent = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
-    console.log(e.target);
-
     const { eventDate, screenTime, rating, workTime } = e.target;
 
     const newEvent: createEventDto = {
